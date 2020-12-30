@@ -2,4 +2,4 @@
 Console text system for VGA displays
 
 ### System block diagram
-![System Block fDiagram](vga_console_system_bd.png?raw=true)
+![System Block Diagram](vga_console_saystem_bd.png?raw=true)
