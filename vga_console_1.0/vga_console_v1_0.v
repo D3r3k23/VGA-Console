@@ -11,7 +11,7 @@ module vga_console_v1_0
 )(
 //////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
-        input wire clk74M,
+        input wire clk_74M,
         input wire rst,
         input wire en_sseg_cursor,
 
@@ -161,9 +161,9 @@ vga_console_v1_0_S_AXI # (
     vga_controller vga_controller_inst
     (
         // Inputs
-        .pix_clk ( clk74M  ),
-        .rst     ( rst     ),
-        .en      ( disp_en ),
+	    .pix_clk ( clk_74M  ),
+	    .rst     ( rst      ),
+	    .en      ( disp_en  ),
 
         .char       ( display_char       ),
         .char_color ( display_char_color ),
