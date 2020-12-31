@@ -7,11 +7,11 @@
 
 const uint32_t CONS_BASE = XPAR_VGA_CONSOLE_0_S_AXI_BASEADDR;
 
-#define CONS_CTRL  *((uint32_t*) CONS_BASE + 0x0) // Ctrl
-#define CURS_LOC   *((uint32_t*) CONS_BASE + 0x4) // Cursor location
-#define CHAR_SET   *((uint32_t*) CONS_BASE + 0x8) // Character
-#define CHAR_COLOR *((uint32_t*) CONS_BASE + 0xC) // Character color
-#define BACK_COLOR *((uint32_t*) CONS_BASE + 0x0) // Background color
+#define CONS_CTRL  *((uint32_t*) (CONS_BASE + 0x0)) // Ctrl
+#define CURS_LOC   *((uint32_t*) (CONS_BASE + 0x4)) // Cursor location
+#define CHAR_SET   *((uint32_t*) (CONS_BASE + 0x8)) // Character
+#define CHAR_COLOR *((uint32_t*) (CONS_BASE + 0xC)) // Character color
+#define BACK_COLOR *((uint32_t*) (CONS_BASE + 0x0)) // Background color
 
 
 struct Point
