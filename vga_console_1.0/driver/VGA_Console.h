@@ -29,7 +29,6 @@ enum Color
 class VGA_Console
 {
 public:
-
     VGA_Console(void);
     void en(void);
     void dis(void);
