@@ -3,7 +3,7 @@ This project was implemented on a Blackboard from [Real Digital](https://www.rea
 
 <img src="img/blackboard.png?raw=true" width="343" height="301">
 
-I designed the VGA Console IP, which enables the use of a VGA display as a console for the Blackboard. The programmable logic contains an AXI interface to receive data from the processor. 80 X 45 character data for the display was stored in block RAM on the FPGA, which was instantiated using the Xilinx Block Memory Generator IP. The VGA Console IP outputs a VGA signal, which was routed through a VGA-HDMI converter module from Real Digital to use the HDMI port on the Blackboard. In addition, the cursor's current position in the character array was outputted to the Blackboard's SSEG display for debugging purposes.
+The VGA Console IP enables the use of a VGA display as a console for the Blackboard. The programmable logic contains an AXI interface to receive data from the processor. 80 X 45 character data for the display was stored in block RAM on the FPGA, which was instantiated using the Xilinx Block Memory Generator IP. The VGA Console IP outputs a VGA signal, which was routed through a VGA-HDMI converter module from Real Digital to use the HDMI port on the Blackboard. In addition, the cursor's current position in the character array was outputted to the Blackboard's SSEG display for debugging purposes.
 
 ### System block diagram
 ![System Block Diagram](img/vga_console_system_bd.png?raw=true)
