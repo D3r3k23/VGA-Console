@@ -4,4 +4,4 @@ This project was implemented on a Blackboard from [Real Digital](https://www.rea
 <img src="img/blackboard.png?raw=true" width="343" height="301">
 
 ### System block diagram
-![System Block Diagram](vga_console_system_bd.png?raw=true)
+![System Block Diagram](img/vga_console_system_bd.png?raw=true)
