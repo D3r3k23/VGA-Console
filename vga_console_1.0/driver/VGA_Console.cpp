@@ -8,6 +8,7 @@ VGA_Console::VGA_Console(void)
 {
     disable_write();
     dis();
+    CHAR_SET = '\0';
 
     set_cursor(1, 1);
     set_margin(1, 1);
