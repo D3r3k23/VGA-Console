@@ -39,14 +39,14 @@ module char_rom
 /////////////////////////////////////////////////////////////////////
 
 BRAM_SINGLE_MACRO #(
-   .BRAM_SIZE("36Kb"), // Target BRAM, "18Kb" or "36Kb" 
-   .DEVICE("7SERIES"), // Target Device: "7SERIES" 
-   .DO_REG(0), // Optional output register (0 or 1)
+   .BRAM_SIZE("36Kb"),  // Target BRAM, "18Kb" or "36Kb" 
+   .DEVICE("7SERIES"),  // Target Device: "7SERIES" 
+   .DO_REG(0),          // Optional output register (0 or 1)
    .INIT(9'h000000000), // Initial values on output port
    .INIT_FILE ("NONE"),
-   .WRITE_WIDTH(16), // Valid values are 1-72 (37-72 only valid when BRAM_SIZE="36Kb")
-   .READ_WIDTH(16),  // Valid values are 1-72 (37-72 only valid when BRAM_SIZE="36Kb")
-   .SRVAL(9'h0), // Set/Reset value for port output
+   .WRITE_WIDTH(16),           // Valid values are 1-72 (37-72 only valid when BRAM_SIZE="36Kb")
+   .READ_WIDTH(16),            // Valid values are 1-72 (37-72 only valid when BRAM_SIZE="36Kb")
+   .SRVAL(9'h0),               // Set/Reset value for port output
    .WRITE_MODE("WRITE_FIRST"), // "WRITE_FIRST", "READ_FIRST", or "NO_CHANGE" 
    .INIT_00(256'h0000000000000000000000000000000000000000000000000000000000000000),
    .INIT_01(256'h0000000000000000000000000000000000000000000000000000000000000000),
@@ -209,4 +209,4 @@ BRAM_SINGLE_MACRO #(
 
 // End of BRAM_SINGLE_MACRO_inst instantiation
 
-endmodule
+endmodule // char_rom
