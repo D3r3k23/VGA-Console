@@ -83,10 +83,7 @@ void VGA_Console::set_cursor(Point point)
     if ((0 <= point.x && point.x < WIDTH ) && (0 <= point.y && point.y < HEIGHT))
     {
         cursor = point;
-
-        CURS_LOC = (cursor.x & 0xFFF);
-        CURS_LOC <<= 12;
-        CURS_LOC |= (cursor.y & 0xFFF);
+        CURS_LOC = ((cursor.x & 0xFFF) << 12) | (cursor.y & 0xFFF);
     }
 }
 
