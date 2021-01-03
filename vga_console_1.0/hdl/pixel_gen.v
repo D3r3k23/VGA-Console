@@ -45,4 +45,4 @@ module pixel_gen
         else
             pix_color = 12'd0;
 
-endmodule
+endmodule // pixel_gen
