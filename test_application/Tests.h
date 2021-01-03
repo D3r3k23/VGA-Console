@@ -3,7 +3,7 @@
 #define TESTS_H
 
 #include "VGA_Console.h"
-#include <time.h>
+#include <sleep.h>
 
 
 class Tests
