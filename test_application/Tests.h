@@ -111,7 +111,6 @@ public:
         console.puts("int main(void)\n");
         console.puts("{\n");
         console.puts("    printf(\"Hello World!\");\n");
-        console.puts("\n");
         console.puts("    return 0;\n");
         console.puts("}\n");
     }
