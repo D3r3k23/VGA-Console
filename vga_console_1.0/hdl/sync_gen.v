@@ -41,4 +41,4 @@ module sync_gen
     assign H_active = (H_ACTIVE_MIN <= H_count) & (H_count <= H_ACTIVE_MAX);
     assign V_active = (V_ACTIVE_MIN <= V_count) & (V_count <= V_ACTIVE_MAX);
 
-endmodule
+endmodule // sync_gen
