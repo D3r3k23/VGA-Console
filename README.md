@@ -17,3 +17,6 @@ The VGA Console IP enables the use of a VGA display as a console for the Blackbo
 ![HelloWorld](img/HelloWorld.jpg?raw=true)
 ![HelloHelloWorld](img/HelloHelloWorld.jpg?raw=true)
 ![Count](img/Count.jpg?raw=true)
+<img src="img/HelloWorld.jpg?raw=true" width="400" height="321">
+<img src="img/HelloHelloWorld.jpg?raw=true" width="400" height="321">
+<img src="img/Count.jpg?raw=true" width="321" height="400">
