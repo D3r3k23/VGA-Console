@@ -51,8 +51,8 @@ public:
 
     void set_margin(int x, int y);
 
-    void set_char_color(uint16_t color);
-    void set_back_color(uint16_t color);
+    void set_char_color(uint16_t color); // 12-bit color
+    void set_back_color(uint16_t color); // 12-bit color
 
 private:
     void enable_write(void);
