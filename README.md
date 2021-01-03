@@ -8,6 +8,6 @@ The VGA Console IP enables the use of a VGA display as a console for the Blackbo
 ### System block diagram
 ![System Block Diagram](img/vga_console_system_bd.png?raw=true)
 
-### *Provided by Real Digital:*
+#### *Provided by Real Digital:*
 * [HDMI/DIV Encoder IP](https://github.com/RealDigitalOrg/VivadoIP/tree/master/hdmi_tx_1.0)
 * [char_rom.v block ram module](https://www.realdigital.org/doc/93562a1dd6587887f4265d6ecac23929)
