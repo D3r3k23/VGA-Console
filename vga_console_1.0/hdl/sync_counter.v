@@ -23,4 +23,4 @@ module sync_counter
         else
             val <= val;
 
-endmodule
+endmodule // sync_counter
