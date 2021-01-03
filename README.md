@@ -1,4 +1,4 @@
-# VGA-Console
+## VGA-Console
 This project was implemented on a Blackboard from [Real Digital](https://www.realdigital.org/). The board includes a Zynq-7000 SoC with an ARM microprocessor and an Artix FPGA.
 
 <img src="img/blackboard.png?raw=true" width="343" height="301">
@@ -10,4 +10,4 @@ The VGA Console IP enables the use of a VGA display as a console for the Blackbo
 
 #### *Provided by Real Digital:*
 * [HDMI/DIV Encoder IP](https://github.com/RealDigitalOrg/VivadoIP/tree/master/hdmi_tx_1.0)
-* [char_rom.v block ram module](https://www.realdigital.org/doc/93562a1dd6587887f4265d6ecac23929)
+* [char_rom.v block RAM module](https://www.realdigital.org/doc/93562a1dd6587887f4265d6ecac23929)
