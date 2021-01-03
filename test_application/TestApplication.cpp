@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    Tests::HelloWorld();
+    Tests::Count();
 
     while (1);
 
