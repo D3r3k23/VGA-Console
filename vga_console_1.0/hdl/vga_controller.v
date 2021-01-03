@@ -76,4 +76,4 @@ module vga_controller
 
     assign { pix_R, pix_G, pix_B } = pix_color;
 
-endmodule
+endmodule // vga_controller
