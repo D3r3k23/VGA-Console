@@ -4,7 +4,7 @@
 
 ////////// Public functions //////////
 
-VGA_Console::VGA_Console(void)
+VGA_Console::VGA_Console()
 {
     disable_write();
     dis();
