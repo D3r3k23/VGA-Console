@@ -15,7 +15,7 @@ public:
     static void HelloWorld()
     {
         console.set_char_color(Color::GREEN);
-        console.puts("Hello World!\n");
+        console.puts("Hello World!");
     }
 
     static void Edges()
