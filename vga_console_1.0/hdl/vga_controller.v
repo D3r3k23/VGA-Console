@@ -49,7 +49,7 @@ module vga_controller
     assign pix_x = vid_active ? (H_count - H_FRONT) : 0;
     assign pix_y = vid_active ? (V_count - V_FRONT) : 0;
 
-    // Character tile coordinates
+    // Character tile internal coordinates
     wire [3 : 0] char_tile_x = (pix_x + 1) % 16; // char ROM latency: 1 clk
     wire [3 : 0] char_tile_y = pix_y % 16;
 
