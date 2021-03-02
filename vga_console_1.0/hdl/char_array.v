@@ -1,6 +1,9 @@
 
 module char_array
-(
+#(parameter
+    integer WIDTH  = 45,
+    integer HEIGHT = 80
+ )(
     // Write port
     input wire          w_clk,
     input wire          w_en,
