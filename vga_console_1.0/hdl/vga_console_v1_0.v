@@ -131,8 +131,8 @@ vga_console_v1_0_S_AXI # (
 
     char_array
     #(
-	    .WIDTH  ( 45 ),
-	    .HEIGHT ( 80 )
+        .WIDTH  ( 45 ),
+        .HEIGHT ( 80 )
     ) char_array_inst
     (
         // Write channel
