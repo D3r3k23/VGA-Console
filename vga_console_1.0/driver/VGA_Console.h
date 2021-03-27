@@ -62,6 +62,8 @@ private:
 private:
     const int HEIGHT = 45;
     const int WIDTH  = 80;
+    
+    int TAB_SIZE = 4;
 
     Point cursor, margin;
 };
