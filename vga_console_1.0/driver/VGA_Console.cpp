@@ -26,8 +26,13 @@ void VGA_Console::dis(void)
 
 void VGA_Console::putc(char ch)
 {
-    if (ch == '\n')
+    if (ch == '\n') // Newline
         endl();
+    else if (ch == '\t') // Tab
+    {
+        for (int i = 0; i < TAB_SIZE; i++)
+            putc(' ');
+    }
     else
     {
         write_char(ch);
