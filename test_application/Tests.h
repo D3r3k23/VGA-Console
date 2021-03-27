@@ -110,8 +110,8 @@ public:
         console.puts("\n");
         console.puts("int main(void)\n");
         console.puts("{\n");
-        console.puts("    printf(\"Hello World!\");\n");
-        console.puts("    return 0;\n");
+        console.puts("\tprintf(\"Hello World!\");\n");
+        console.puts("\treturn 0;\n");
         console.puts("}\n");
     }
 };
