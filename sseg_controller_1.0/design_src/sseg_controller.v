@@ -24,10 +24,7 @@ module sseg_controller
     reg [1 : 0] dig_sel = 0;
 
     always @( posedge div_clk )
-        if (rst || dig_sel == 3)
-            dig_sel <= 0;
-        else
-            dig_sel <= dig_sel + 1;
+        dig_sel <= dig_sel + 1;
 
     wire [3 : 0] an_data;
     wire [6 : 0] cat_data;
