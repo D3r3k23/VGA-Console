@@ -36,12 +36,7 @@ module pixel_gen
 
     always @*
         if (~rst && en && vid_active)
-        begin
-            if (pix_is_char)
-                pix_color = char_color;
-            else
-                pix_color = back_color;
-        end
+            pix_color = pix_is_char ? char_color : back_color;
         else
             pix_color = 12'd0;
 
