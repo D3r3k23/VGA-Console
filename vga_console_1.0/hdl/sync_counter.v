@@ -11,6 +11,7 @@ module sync_counter
 );
 
     always @( posedge pix_clk )
+    begin
         if (rst)
             val <= 0;
         else if (en)
@@ -22,5 +23,6 @@ module sync_counter
         end
         else
             val <= val;
+    end
 
 endmodule // sync_counter
