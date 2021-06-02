@@ -15,8 +15,7 @@ module sync_gen
     output wire V_active
 );
 
-    sync_counter #( .STOP(H_SYNC_MAX) )
-    H_counter
+    sync_counter #(.STOP(H_SYNC_MAX)) H_counter
     (
         .pix_clk ( pix_clk ),
         .rst     ( rst     ),
@@ -26,8 +25,7 @@ module sync_gen
 
     wire V_en = (H_count == H_SYNC_MAX);
 
-    sync_counter #( .STOP(V_SYNC_MAX) )
-    V_counter
+    sync_counter #(.STOP(V_SYNC_MAX)) V_counter
     (
         .pix_clk ( pix_clk ),
         .rst     ( rst     ),
