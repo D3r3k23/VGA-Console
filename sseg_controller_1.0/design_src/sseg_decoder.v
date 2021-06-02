@@ -10,7 +10,7 @@ module sseg_decoder
     assign an_data = 1'b1 << dig_sel;
 
     reg [3 : 0] dig_data;
-
+    
     always @*
         case (dig_sel)
             2'd0 : dig_data = (num / 1) % 10;
@@ -19,7 +19,8 @@ module sseg_decoder
             2'd3 : dig_data = (num / 1000) % 10;
          default : dig_data = 0;
         endcase
-
+    // wire [3 : 0] dig_data = (num / 10 ** dig_sel) % 10;
+    
     always @*
         case (dig_data)
             4'd0 : cat_data = 7'b0111111;
