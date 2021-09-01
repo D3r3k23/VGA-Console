@@ -129,11 +129,11 @@ vga_console_v1_0_S_AXI # (
     wire [7  : 0] current_char;
     wire [11 : 0] current_char_color;
 
-    char_array
+    char_buffer
     #(
         .WIDTH  ( 45 ),
         .HEIGHT ( 80 )
-    ) char_array_inst
+    ) char_buffer_inst
     (
         // Write channel
         .w_clk   ( s_axi_aclk ),
