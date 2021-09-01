@@ -1,5 +1,5 @@
 
-module char_array
+module char_buffer
 #(parameter
     integer WIDTH  = 45,
     integer HEIGHT = 80
@@ -29,7 +29,7 @@ module char_array
     wire [19 : 0] w_data = { w_color, w_char };
     wire [19 : 0] r_data;
 
-    blk_mem_gen_0 char_memory // From Block Memory Generator IP
+    blk_mem_gen_0 char_mem // From Block Memory Generator IP
     (
         // Write port
         .clka  ( w_clk  ), // input wire clka
