@@ -19,13 +19,13 @@ const uint32_t CONS_BASE = XPAR_VGA_CONSOLE_0_S_AXI_BASEADDR;
 struct Point
     { int x, y; };
 
-struct Color
+enum Color : uint16_t // class
 {
-    const static uint16_t BLACK = 0x000;
-    const static uint16_t WHITE = 0xFFF;
-    const static uint16_t RED   = 0xF00;
-    const static uint16_t GREEN = 0x0F0;
-    const static uint16_t BLUE  = 0x00F;
+    BLACK = 0x000,
+    WHITE = 0xFFF,
+    RED   = 0xF00,
+    GREEN = 0x0F0,
+    BLUE  = 0x00F
 };
 
 
